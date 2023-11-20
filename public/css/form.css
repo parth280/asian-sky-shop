@@ -1,0 +1,135 @@
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    z-index: 5;
+    display: none;
+}
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#fafafa;
+}
+.form-container{
+    width: 60%;
+    min-width: 300px;
+    height: 80vh;
+    background: white;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+.form-img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-heading{
+    font-size: 35px;
+    margin-bottom:20px ;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b9b9b9;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+}
+::placeholder{
+    color: #b9b9b9;
+    text-transform: capitalize;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus{
+    border: 2px solid #d5be8b;
+}
+input:focus::placeholder{
+    color: #d5be8b;
+}
+.error{
+    display: block;
+    font-size: .8rem;
+    color: rgb(255, 41, 41);
+    margin: 5px 0;
+    text-transform: capitalize;
+    user-select: none;
+    opacity: 0;
+}
+.error.show{
+    opacity: 1;
+}
+#tc{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#tc:checked{
+    background: #d5be8b;
+}
+#tc::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../images/check.png);
+    background-size: contain;
+    display: none;
+}
+#tc:checked::before{
+    display: block;
+}
+.tc-text{
+    margin-left: 5px;
+    font-size: .8rem;
+}
+.tc-text a{
+    color: #000;
+}
+.submit-btn{
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    padding: .8rem 0;
+    border-radius: 0;
+    background: #d5be8b;
+    color: white;
+    font-family: 'cinzel';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.other-form-link{
+    color: black;
+    font-size: .8rem;
+}

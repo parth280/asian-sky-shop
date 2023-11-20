@@ -1,0 +1,21 @@
+{
+  "name": "practicum-4th-sem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express.js": "^1.0.0",
+    "firebase": "^9.17.2",
+    "nodemon": "^2.0.21"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
